@@ -38,9 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'PersonalAccount.apps.PersonalaccountConfig',
-    'Education.apps.EducationConfig',
     'Articles.apps.ArticlesConfig',
-    'ckeditor'
+    'Education.apps.EducationConfig',
+    'ckeditor',
 ]
 
 MIDDLEWARE = [
@@ -122,10 +122,10 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'PortalForAgents/static'),
     os.path.join(BASE_DIR, 'Education/static'),
     os.path.join(BASE_DIR, 'PersonalAccount/static'),
     os.path.join(BASE_DIR, 'Articles/static'),
+    os.path.join(BASE_DIR, 'PortalForAgents/static'),
 ]
 
 

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+{% block head %} {% include 'inc/_head.html' %} {% endblock %}
+
+
+<body class="bg-login pace-done d-flex align-items-center" style="height:100vh">
+	<div class="pace pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+
+{% block content %}
+
+{% endblock %}
+
+
+	</div>
+
+
+
+</body>
+{% block scripts %} {% include 'inc/_scripts.html' %} {% endblock %}
+</html>

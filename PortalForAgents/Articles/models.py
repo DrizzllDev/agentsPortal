@@ -4,7 +4,7 @@ from ckeditor.fields import RichTextField
 
 class Articles(models.Model):
     title = models.CharField(max_length=70, verbose_name="Заголовок статьи")
-    description =  models.CharField(max_length=250, verbose_name="Краткое описание статьи")
+    description = models.CharField(max_length=250, verbose_name="Краткое описание статьи")
     text = RichTextField(verbose_name="Статья")
 
     class Meta:
